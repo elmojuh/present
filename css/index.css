@@ -2,8 +2,8 @@ header{
 	/*background-color: #363636;*/
 }
 
-a img{
-	width: 20;
+#logo{
+	height: 100%;
 }
 
 .container-fluid{
