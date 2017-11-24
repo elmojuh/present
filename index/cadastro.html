@@ -4,23 +4,37 @@
 	<head>
 		<title> Present - Cadastro </title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="../Bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="../css/index.css">
 	</head>
 
 	<body>
 		<header>
-			<a href="bem-vindo.html"> <img src="../imagens/logo2.jpg" width="50" alt="Logo da Present"> </a>
-		</header>
-		
-		<hr>
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"><img id="logo" src="../imagens/logo.jpg" alt="Logo"></a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="bem-vindo.html">Home</a></li>
+							<li class="active"><a href="#">Cadastro</a></li>
+							<li><a href="#">Sobre Nós</a></li>
+						</ul>
 
-		<nav>
-			<ul>
-				<li> <a href="bem-vindo.html"> Home </a> </li>
-				<li> <a href="cadastro.html"> Cadastro </a> </li> 
-				<li> <a href="login.html"> Login </a> </li> 
-				<li> <a href="sobrenos.html"> Sobre Nós </a> </li> 
-			</ul>
-		</nav>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Minha conta</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
 		
 		<hr>
 		<section>
