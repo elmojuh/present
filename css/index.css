@@ -1,0 +1,20 @@
+header{
+	/*background-color: #363636;*/
+}
+
+a img{
+	width: 20;
+}
+
+.container-fluid{
+	background-color: #EEE9E9;
+
+}
+
+footer{
+	background-color: #363636;
+}
+
+footer p{
+	color: white;
+}
