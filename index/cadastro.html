@@ -2,7 +2,7 @@
 
 <html lang="pt-br">
 	<head>
-		<title> Present - Cadastro </title>
+		<title> Present | Cadastro </title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="../Bootstrap/css/bootstrap.css">
 		<link rel="stylesheet" href="../css/index.css">
@@ -18,14 +18,14 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#"><img id="logo" src="../imagens/logo.jpg" alt="Logo"></a>
+						<a class="navbar-brand" href="bem-vindo.html"><img id="logo" src="../imagens/logo.jpg" alt="Logo"></a>
 					</div>
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<ul class="nav navbar-nav">
-							<li><a href="bem-vindo.html">Home</a></li>
-							<li class="active"><a href="#">Cadastro</a></li>
-							<li><a href="#">Sobre Nós</a></li>
-						</ul>
+						<li class="active"><a href="bem-vindo.html">Home</a></li>
+						<li class="active"><a href="cadastro.html">Cadastro</a></li>
+						<li class="active"><a href="sobrenos.html">Sobre Nós</a></li>
+					</ul>
 
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Minha conta</a></li>
@@ -35,21 +35,125 @@
 			</nav>
 		</header>
 
-		
-		<hr>
-		<section>
-		<h1> Faça o seu Cadastro </h1>
-		<form>
-			<input type="text" name="nome" placeholder="Nome:"><br>
-			<input type="email" name="email" placeholder="Email:"><br>
-			<input type="email" name="email" placeholder="Confirme o Email:"><br>
-			<input type="password" name="senha" placeholder="Senha:"><br>
-			<input type="password" name="senha" placeholder="Confirme Senha:"><br>
-			<input type="number" name="cpf_CNPJ" placeholder="CPF/CNPJ:"><br>
-			<button type="button"> Cadastrar </button>
-		</form>
-		</section>
+		<div class="container-fluid">
+			<section>
 
+			
+				<div class="row">
+					<div class="col-sm-offset-2">
+						<h1> Faça o seu Cadastro: </h1>
+					</div>
+					<br>
+				</div>
+
+				<div class="row">
+					<form class="form-horizontal">
+						
+						<div class="form-group">
+					    	<label for="entradaUsuario" class="col-sm-2 control-label">Usuário:</label>
+					    	<div class="col-sm-3">
+					    		<input type="password" class="form-control" id="entradaUsuario" placeholder="Usuário">
+					    	</div>
+
+					    	<label for="entradaCPF" class="col-sm-2 control-label">CPF:</label>
+					    	<div class="col-sm-3">
+					    		<input type="password" class="form-control" id="entradaCPF" placeholder="CPF">
+					    	</div>					    	
+					 	</div>
+
+						<div class="form-group">
+							<label for="enradaEmail" class="col-sm-2 control-label">Email:</label>
+							<div class="col-sm-3">
+								<input type="email" class="form-control" id="enradaEmail" placeholder="Email">
+					    	</div>
+					    	<label for="entradaConfirmaEmail" class="col-sm-2 control-label">Confirmar Email:</label>
+					    	<div class="col-sm-3">
+								<input type="email" class="form-control" id="entradaConfirmaEmail" placeholder="Confirme Email">
+					    	</div>
+
+						</div>
+
+						<div class="form-group">
+					    	<label for="entradaSenha" class="col-sm-2 control-label">Senha:</label>
+					    	<div class="col-sm-3">
+					    		<input type="password" class="form-control" id="inputPassword3" placeholder="Senha">
+					    	</div>
+
+					    	<label for="entradaConfirmarSenha" class="col-sm-2 control-label">Confirmar Senha:</label>
+					    	<div class="col-sm-3">
+					    		<input type="password" class="form-control" id="entradaConfirmarSenha" placeholder="Confirme Senha">
+					    	</div>
+					 	</div>
+
+					 	
+						
+						
+					  	
+					  	<div class="form-group">
+					    	<div class="col-sm-offset-5 col-sm-10">
+					      		<button type="submit" class="btn btn-default"> Cadastrar </button>
+					    	</div>
+					  	</div>
+					</form>
+
+
+
+
+
+
+			<!--	Formulários Após serem preenchidos, guardar para javascript 
+				
+			<div class="form-group has-success has-feedback">
+				<label class="control-label" for="inputSuccess2">Input with success</label>
+				<input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+				<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+				<span id="inputSuccess2Status" class="sr-only">(success)</span>
+			</div>
+
+			<div class="form-group has-warning has-feedback">
+				<label class="control-label" for="inputWarning2">Input with warning</label>
+				<input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+				<span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+				<span id="inputWarning2Status" class="sr-only">(warning)</span>
+			</div>
+
+			<div class="form-group has-error has-feedback">
+				<label class="control-label" for="inputError2">Input with error</label>
+				<input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
+				<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+				<span id="inputError2Status" class="sr-only">(error)</span>
+			</div>
+ 			
+
+
+
+ 						<div class="form-group">
+					    	<div class="col-sm-offset-1 col-sm-11">
+					      		<div class="checkbox">
+					        		<label>
+					          			<input type="checkbox"> Remember me
+					        		</label>
+					      		</div>
+					    	</div>
+					  	</div>
+					  	
+ 			-->
+
+
+
+			<!-- <form>
+				<input type="text" name="nome" placeholder="Nome:"><br>
+				<input type="email" name="email" placeholder="Email:"><br>
+				<input type="email" name="email" placeholder="Confirme o Email:"><br>
+				<input type="password" name="senha" placeholder="Senha:"><br>
+				<input type="password" name="senha" placeholder="Confirme Senha:"><br>
+				<input type="number" name="cpf_CNPJ" placeholder="CPF/CNPJ:"><br>
+				<button type="button"> Cadastrar </button>
+			</form> -->
+			</section>
+		</div>
+
+		<br>
 		<footer>
 			<p> Copyright © 2017 </p>
 		</footer>
