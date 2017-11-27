@@ -29,16 +29,14 @@
 					<ul class="nav navbar-nav navbar-right">
 						<form class="form-inline">
 							<div class="form-group">
-								<label class="sr-only" for="entradaEmail"> Email address</label>
-						    	<input type="email" class="form-control" id="entradaEmail" placeholder="Email">
+						    	<input type="email" class="form-control input-sm" placeholder="Email">
 							</div>
 							
 							<div class="form-group">
-								<label class="sr-only" for="entradaSenha"> Senha </label>
-								<input type="password" class="form-control" id="entradaSenha" placeholder="Password">
+								<input type="password" class="form-control input-sm" placeholder="Password">
 							</div>
 
-							<button type="submit" class="btn btn-default">Entrar</button>
+							<button type="submit" class="btn btn-default btn-sm">Entrar</button>
 						</form>
 					</ul>
 				</div>
@@ -47,11 +45,21 @@
 
 		<div class="container-fluid"> 
 			<section>
-				<h1> Encontre o que procura na Present </h1>
-				<form>
-					<input type="text" name="item" placeholder="Procure o que deseja aqui">
-					<input type="submit">
-				</form>
+				<div class="row">
+					<div class="col-sm-offset-3">
+						<h1> Encontre o que procura na Present </h1>
+					</div>
+				</div>
+
+				<br><br>
+				<div class="row">
+					
+					<form class="form-horizontal">
+						<input class="col-sm-offset-2 col-sm-7 btn-lg" type="text" name="item" placeholder="Procure o que deseja aqui">
+						<input class="btn btn-default btn-lg" type="submit" value="Pesquisar"> 
+					</form>
+				</div>
+
 			</section>
 		</div>
 		<br>
