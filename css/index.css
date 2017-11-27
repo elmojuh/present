@@ -6,6 +6,10 @@ header{
 	height: 100%;
 }
 
+.nav .navbar-nav .navbar-right{
+	margin-top: 2px;	
+}
+
 footer{
     text-align: center;
     width: 100%;

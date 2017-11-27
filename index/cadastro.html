@@ -22,14 +22,27 @@
 					</div>
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<ul class="nav navbar-nav">
-						<li class="active"><a href="bem-vindo.html">Home</a></li>
-						<li class="active"><a href="cadastro.html">Cadastro</a></li>
-						<li class="active"><a href="sobrenos.html">Sobre Nós</a></li>
-					</ul>
+							<li class="active"><a href="bem-vindo.html">Home</a></li>
+							<li class="active"><a href="cadastro.html">Cadastro</a></li>
+							<li class="active"><a href="sobrenos.html">Sobre Nós</a></li>
+						</ul>
 
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Minha conta</a></li>
+							<form class="form-inline">
+								<div class="form-group">
+									<label class="sr-only" for="entradaEmail"> Email address</label>
+							    	<input type="email" class="form-control" id="entradaEmail" placeholder="Email">
+								</div>
+								
+								<div class="form-group">
+									<label class="sr-only" for="entradaSenha"> Senha </label>
+									<input type="password" class="form-control" id="entradaSenha" placeholder="Password">
+								</div>
+								
+								<button type="submit" class="btn btn-default">Entrar</button>
+							</form>
 						</ul>
+
 					</div>
 				</div>
 			</nav>
@@ -37,8 +50,6 @@
 
 		<div class="container-fluid">
 			<section>
-
-			
 				<div class="row">
 					<div class="col-sm-offset-2">
 						<h1> Faça o seu Cadastro: </h1>
