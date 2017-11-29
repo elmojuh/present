@@ -1,118 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Avaliação</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../../css/index.css">
-    <link rel="stylesheet" href="../../css/persona.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-        #map{
-            height: 400px;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
+    <head>
+        <title>Avaliação</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="../../css/index.css">
+        <link rel="stylesheet" href="../../css/persona.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            #map{
+                height: 400px;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
 
-
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="busca.html"><img id="logo" src="../../imagens/logo2.jpg" alt="Logo"></a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li><a href="feed.html">Feed</a></li>
-                <li class="active"><a href="#">Perfil</a></li>
-                <li><a href="#">Messagens</a></li>
-            </ul>
-            <form class="navbar-form navbar-right" role="search">
-                <div class="form-group input-group">
-                    <input type="text" class="form-control" placeholder="Search..">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button">
-                <span class="glyphicon glyphicon-search"></span>
-            </button>
-          </span>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="busca.html"><img id="logo" src="../../imagens/logo2.jpg" alt="Logo"></a>
                 </div>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="configuracoes/configuracoes.html"><span class="glyphicon glyphicon-user"></span>Configurações do Perfil</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-
-
-<div class="container-fluid">
-    <div class="row content">
-        <div class="col-sm-3 sidenav">
-            <img id="persona" src="../../imagens/personas/perfil.jpg" alt="Sem Imagem de perfil.">
-            <h4>John's Blog</h4>
-            <ul class="nav nav-pills nav-stacked">
-                <li><a href="persona.html">Propostas</a></li>
-                <li class="active"><a href="#section2">Avaliação</a></li>
-                <li><a href="#section3">Trabalhos Divulgados</a></li>
-                <li><a href="#section3">Comentários</a></li>
-            </ul><br>
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search Blog..">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="button">
-              <span class="glyphicon glyphicon-search"></span>
-          </button>
-        </span>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="feed.html">Feed</a></li>
+                        <li class="active"><a href="persona.html">Perfil</a></li>
+                        <li><a href="#">Messagens</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group input-group">
+                            <input type="text" class="form-control" placeholder="Search..">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="configuracoes/configuracoes.html"><span class="glyphicon glyphicon-user"></span>Configurações do Perfil</a></li>
+                    </ul>
+                </div>
             </div>
-            <h3>Meu Local de Negócios</h3><!- adicionar um editar-->
-            <div id="map"></div>
-            <script>
-                function initMap() {
-                    var uluru = {lat: -22.9542623, lng: -43.1707384};
-                    var map = new google.maps.Map(document.getElementById('map'), {
-                        zoom: 15,
-                        center: uluru
-                    });
-                    var marker = new google.maps.Marker({
-                        position: uluru,
-                        map: map
-                    });
-                }
-            </script>
-            <script async defer
-                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmWuhCvWJNeHHTi3ileKh1djseGhjzYsE&callback=initMap">
-            </script>
+        </nav>
+
+
+
+        <div class="container-fluid">
+            <div class="row content">
+                <div class="col-sm-3 sidenav">
+                    <img id="persona" src="../../imagens/personas/perfil.jpg" alt="Sem Imagem de perfil.">
+                    <h4>John's Blog</h4>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="persona.html">Propostas</a></li>
+                        <li class="active"><a href="#section2">Avaliação</a></li>
+                        <li><a href="#section3">Trabalhos Divulgados</a></li>
+                        <li><a href="#section3">Comentários</a></li>
+                    </ul><br>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search Blog..">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">
+                      <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+                    </div>
+                    <h3>Meu Local de Negócios</h3><!-- adicionar um editar-->
+                    <div id="map"></div>
+                    <script>
+                        function initMap() {
+                            var uluru = {lat: -22.9542623, lng: -43.1707384};
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 15,
+                                center: uluru
+                            });
+                            var marker = new google.maps.Marker({
+                                position: uluru,
+                                map: map
+                            });
+                        }
+                    </script>
+                    <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmWuhCvWJNeHHTi3ileKh1djseGhjzYsE&callback=initMap">
+                    </script>
+                </div>
+
+                <div class="col-sm-9">
+                    <h2>Avaliação do seu serviso com base nas suas vendas:</h2>
+                    <h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>
+                    <h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>
+                    <p>Colocar estrelinhas e comentários mais críticos nos dois opostos</p>
+                    <br><br>
+                    <hr>
+                    <h2>Avaliações Dadas:</h2>
+                    <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
+                    <h5><span class="label label-success">Lorem</span></h5><br>
+                    <p>Ultimas avaliações dadas de serviços requisitados</p>
+
+
+                </div>
+            </div>
         </div>
 
-        <div class="col-sm-9">
-            <h2>Avaliação do seu serviso com base nas suas vendas:</h2>
-            <h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>
-            <h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>
-            <p>Colocar estrelinhas e comentários mais críticos nos dois opostos</p>
-            <br><br>
-            <hr>
-            <h2>Avaliações Dadas:</h2>
-            <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
-            <h5><span class="label label-success">Lorem</span></h5><br>
-            <p>Ultimas avaliações dadas de serviços requisitados</p>
+        <footer class="text-center">
+            <p> Copyright © 2017 </p>
+        </footer>
 
-
-        </div>
-    </div>
-</div>
-
-<footer class="text-center">
-    <p> Copyright © 2017 </p>
-</footer>
-
-</body>
+    </body>
 </html>
