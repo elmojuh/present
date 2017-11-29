@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="../Bootstrap/css/bootstrap.css">
 		<link rel="stylesheet" href="../css/index.css">
 
-		<script> src="../js/cadastroLogin.js" </script>
+		<script src="../js/cadastroLogin.js"> </script>
 	</head>
 
 	<body>
@@ -30,18 +30,18 @@
 						</ul>
 
 						<ul class="nav navbar-nav navbar-right">
-						<form class="form-inline">
-							<div class="form-group">
-						    	<input type="email" class="form-control input-sm" placeholder="Email">
-							</div>
-							
-							<div class="form-group">
-								<input type="password" class="form-control input-sm" placeholder="Password">
-							</div>
+							<form class="form-inline">
+								<div class="form-group">
+							    	<input type="text" class="form-control input-sm" id="entradaLogin" placeholder="Usuario">
+								</div>
+								
+								<div class="form-group">
+									<input type="password" class="form-control input-sm" id="entradaSenha" placeholder="Password">
+								</div>
 
-							<button type="submit" class="btn btn-default btn-sm">Entrar</button>
-						</form>
-					</ul>
+								<button type="button" onclick="fazerLogin()" class="btn btn-default btn-sm">Entrar</button>
+							</form>
+						</ul>
 					</div>
 				</div>
 			</nav>
@@ -62,12 +62,12 @@
 						<div class="form-group">
 					    	<label for="entradaUsuario" class="col-sm-2 control-label">Usuário:</label>
 					    	<div class="col-sm-3">
-					    		<input type="password" class="form-control" id="entradaUsuario" placeholder="Usuário">
+					    		<input type="text" class="form-control" id="entradaUsuario" placeholder="Usuário">
 					    	</div>
 
 					    	<label for="entradaCPF" class="col-sm-2 control-label">CPF:</label>
 					    	<div class="col-sm-3">
-					    		<input type="password" class="form-control" id="entradaCPF" placeholder="CPF">
+					    		<input type="text" class="form-control" id="entradaCPF" placeholder="CPF">
 					    	</div>					    	
 					 	</div>
 
@@ -101,7 +101,7 @@
 					  	
 					  	<div class="form-group">
 					    	<div class="col-sm-offset-5 col-sm-10">
-					      		<button type="button" value="entrar" class="btn btn-default btn-lg" onclick="fazerLogin()"> Cadastrar </button>
+					      		<button type="button" value="entrar" class="btn btn-default btn-lg"> Cadastrar </button>
 					    	</div>
 					  	</div>
 					</form>
