@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="../../css/index.css">
-        <link rel="stylesheet" href="../../css/persona.css">
+        <link rel="stylesheet" href="../../css/feed.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <style>
@@ -18,7 +18,6 @@
         </style>
     </head>
     <body>
-
 
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
@@ -38,12 +37,12 @@
                     </ul>
                     <form class="navbar-form navbar-right" role="search">
                         <div class="form-group input-group">
-                            <input type="text" class="form-control" placeholder="Search..">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">
-                        <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                  </span>
+                            <input type="text" class="form-control" placeholder="Procure...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </span>
                         </div>
                     </form>
                     <ul class="nav navbar-nav navbar-right">
@@ -52,6 +51,138 @@
                 </div>
             </div>
         </nav>
+
+        <div class="container text-center">    
+            <div class="row">
+                <div class="col-sm-3 well">
+
+                    <img id="perfilFoto" src="../../imagens/personas/perfil.jpg" alt="Sem Imagem de perfil.">
+                    
+                    <div class="well">
+                        <p> <b> Links 1 </b> </p> 
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#"> Link1 </a></li>
+                            <li><a href="#"> Link2 </a></li>
+                            <li><a href="#"> Link3 </a></li>
+                            <li><a href="#"> Link4 </a></li>
+                        </ul><br>
+                    </div>
+                    
+                    <div class="well">
+                        <div id="map"></div>
+                        <script>
+                        function initMap() {
+                            var uluru = {lat: -22.9542623, lng: -43.1707384};
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 15,
+                                center: uluru
+                            });
+                            var marker = new google.maps.Marker({
+                                position: uluru,
+                                map: map
+                            });
+                        }
+                        </script>
+                        <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmWuhCvWJNeHHTi3ileKh1djseGhjzYsE&callback=initMap">
+                        </script>
+                    </div>
+                </div>
+            
+                <div class="col-sm-7">
+            
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="panel panel-default text-left">
+                                <div class="panel-body">
+                                    <h1> Poste algo no seu feed de notícias: </h1>
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <textarea class="form-control" rows="3" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-lg">Postar</button>
+                                        </form>     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="well">
+                                <h4> <b> Seguindo </b> </h4>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-6">
+                            <div class="well">
+                                <h4> <b> Por Perto... </b> </h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="well">
+                                <p> <b> Ronaldo disse: </b> Estou procurando um advogado! recomendam algo para mim! </p>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="col-sm-6">
+                            <div class="well">
+                                <p> <b> Anônimo disse: </b> Comprei um Hd Externo na Barraquinha, da esquina, estou muito satisfeito!  </p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="well">
+                                <p> <b> Ingrid disse: </b> Blackfriday, alguma promoção???  </p>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-6">
+                            <div class="well">
+                                <p> <b> <i> Padeiro </i> disse: </b> Promoção de Sonhos!!  </p>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="well">
+                                <p> <b> Rick disse: </b> Ninguém existe de propósito, ninguém pertence a nenhum lugar, todos vão morrer </p>
+                            </div>
+                        </div>
+                    
+                        <div class="col-sm-6">
+                            <div class="well">
+                                <p> <b> Rick disse: </b> É sua escolha tornar isso pessoal. </p> 
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            
+                <div class="col-sm-2 well">
+                    <div class="thumbnail">
+                        <p>ADS</p>
+                    </div>      
+                    
+                    <div class="well">
+                        <p>ADS</p>
+                    </div>
+                  
+                    <div class="well">
+                        <p>ADS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <footer class="text-center">
             <p> Copyright © 2017 </p>
