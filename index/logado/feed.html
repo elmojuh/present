@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="../../css/feed.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="../../js/funcoes.js"> </script>
+
         <style>
             #map{
                 height: 400px;
@@ -96,9 +98,9 @@
                             <div class="panel panel-default text-left">
                                 <div class="panel-body">
                                     <h1> Poste algo no seu feed de notícias: </h1>
-                                    <form role="form">
+                                    <form role="form" onsubmit="return false;">
                                         <div class="form-group">
-                                            <textarea class="form-control" rows="3" required></textarea>
+                                            <input type="text" id="textoDoUsuario" onkeyup="enviarMensagem(event)" class="form-control" rows="3" required></input>
                                         </div>
                                         <button type="submit" class="btn btn-primary btn-lg">Postar</button>
                                         </form>     
@@ -122,8 +124,8 @@
                     </div>
                     
                     <div class="row">
-                        <div class="col-sm-6">
-                            <div class="well">
+                        <div  class="col-sm-6">
+                            <div id="post" class="well">
                                 <p> <b> <a href="#">Ronaldo</a> disse: </b> Estou procurando um advogado! recomendam algo para mim! </p>
                                 <h5><span class="glyphicon glyphicon-time"></span> 2 dias atrás.</h5>
                             </div>
