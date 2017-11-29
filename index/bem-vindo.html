@@ -30,33 +30,26 @@
 						<li><a href="cadastro.html">Cadastro</a></li>
 						<li><a href="sobrenos.html">Sobre Nós</a></li>
 					</ul>
-					<div class="collapse navbar-collapse" id="myNavbar">
-						<ul class="nav navbar-nav">
-							<li><a href="bem-vindo.html">Home</a></li>
-							<li class="active"><a href="cadastro.html">Cadastro</a></li>
-							<li><a href="sobrenos.html">Sobre Nós</a></li>
-						</ul>
+					
+					<ul class="nav navbar-nav navbar-right">
+						<form class="form-inline">
+						<div class="form-group">
+						    <input type="text" class="form-control input-sm" id="entradaLogin" placeholder="Usuario">
+						</div>								
+				
+						<div class="form-group">
+							<input type="password" class="form-control input-sm" id="entradaSenha" placeholder="Password">
+						</div>
 
-						<ul class="nav navbar-nav navbar-right">
-							<form class="form-inline">
-								<div class="form-group">
-							    	<input type="text" class="form-control input-sm" id="entradaLogin" placeholder="Usuario">
-								</div>
-								
-								<div class="form-group">
-									<input type="password" class="form-control input-sm" id="entradaSenha" placeholder="Password">
-								</div>
-
-								<button type="button" onclick="fazerLogin()" class="btn btn-default btn-sm">Entrar</button>
-							</form>
-						</ul>
-					</div>
+						<button type="button" onclick="fazerLogin()" class="btn btn-default btn-sm">Entrar</button>
+						</form>
+					</ul>
 				</div>
 			</div>
 		</nav>
 
 		<div style="text-align: end">
-			<a href="logado/feed.html"><div>..</div></a><!-ATALHO PARA LOGIN->
+			<a href="logado/feed.html"><div>..</div></a><!--ATALHO PARA LOGIN-->
 		</div>
 
 		<div class="container-fluid"> 
